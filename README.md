@@ -1,77 +1,160 @@
 # Telco-customer-churn-analysis
-# Telco Customer Churn Analysis | Snowflake & Power BI
+# Telco Customer Churn Analytics Platform
+End-to-End Snowflake & Power BI Analytics Project
 
-## 📌 Project Overview
-This project focuses on analyzing customer churn behavior for a telecom company using a modern data analytics stack.  
-The goal is to identify churn drivers, calculate key churn KPIs, and present insights through a professional Power BI dashboard.
+---
+
+## 📖 Project Overview
+This project implements an enterprise-style analytics platform to analyze customer churn behavior for a telecom company.  
+It follows a **layered data architecture** in Snowflake to ensure scalability, data quality, governance, and BI readiness.
+
+The final insights are delivered through a professional **Power BI dashboard**.
 
 ---
 
 ## 🛠 Tech Stack
-- **Snowflake** – Data Warehousing
-- **SQL** – Data transformation & analytics
-- **Power BI** – Data visualization & dashboarding
-- **CSV Dataset** – Telco Customer Churn data
+- **Snowflake** – Cloud Data Warehouse
+- **SQL** – Data Transformation & Analytics
+- **Power BI** – Business Intelligence & Visualization
+- **CSV Dataset** – Telco Customer Churn Data
 
 ---
 
-## 🏗 Architecture
-RAW Layer → CLEAN Layer → ANALYTICS Layer → Power BI Dashboard
+## 🏗 Architecture Overview
+RAW
+↓
+CLEAN
+↓
+DATA_QUALITY
+↓
+SEMANTIC
+↓
+ANALYTICS
+↓
+BI_LAYER
+↓
+Power BI Dashboard
 
+
+Additional cross-cutting layers:
+- SECURITY_GOVERNANCE
+- COST_MONITORING
 
 ---
 
-## 🧱 Data Layers
+## 🧱 Data Layers Explained
 
-### 1. RAW Layer
-- Loaded raw CSV data using Snowflake stage and file format
+### 1️⃣ RAW Layer
+- Stores raw ingested data from source files
 - No transformations applied
+- Preserves source fidelity
 
-### 2. CLEAN Layer
-- Data cleaning and standardization
-- Handled nulls and data types
-- Prepared analysis-ready tables
+**Purpose:** Auditing, traceability, and reprocessing
 
-### 3. ANALYTICS Layer
-Created KPI tables and views:
-- Overall Churn Rate
-- Churn by Contract Type
-- Churn by Internet Service
-- Churn by Tenure Group
-- Revenue Impact of Churn
-- High-Risk Customer Segments
+---
+
+### 2️⃣ CLEAN Layer
+- Data type standardization
+- Null handling
+- Column normalization
+- Business-ready cleaned tables
+
+**Purpose:** Reliable, structured data foundation
+
+---
+
+### 3️⃣ DATA_QUALITY Layer
+- Validation checks (row counts, null checks, domain checks)
+- Data completeness and consistency verification
+- Error detection for upstream data issues
+
+**Purpose:** Trustworthy analytics and reporting
+
+---
+
+### 4️⃣ SEMANTIC Layer
+- Business-friendly definitions
+- Derived fields and standardized metrics
+- Consistent naming conventions
+
+**Purpose:** Single source of truth for metrics
+
+---
+
+### 5️⃣ ANALYTICS Layer
+- KPI and aggregation tables
+- Churn analysis by:
+  - Contract Type
+  - Internet Service
+  - Tenure Groups
+- Revenue impact analysis
+- High-risk customer segmentation
+
+**Purpose:** Business insight generation
+
+---
+
+### 6️⃣ BI_LAYER
+- Power BI optimized tables/views
+- Pre-aggregated metrics
+- Minimal transformation in BI tool
+
+**Purpose:** Performance and simplicity in dashboards
+
+---
+
+### 7️⃣ SECURITY_GOVERNANCE
+- Role-based access control
+- Schema-level and object-level permissions
+- Separation of duties
+
+**Purpose:** Data protection and compliance
+
+---
+
+### 8️⃣ COST_MONITORING
+- Warehouse usage tracking
+- Query performance monitoring
+- Cost visibility and optimization
+
+**Purpose:** Cost-efficient data operations
 
 ---
 
 ## 📊 Power BI Dashboard
-Key insights displayed:
-- Overall churn percentage
+The Power BI dashboard provides:
+- Overall churn rate
 - Total vs churned customers
-- Churn distribution by contract and tenure
+- Churn by contract and tenure
 - Average monthly charges
 - Customer-level drill-down
 
-The dashboard is designed as a **single-page executive view** for quick decision-making.
+Designed as a **single-page executive dashboard** for fast decision-making.
 
 ---
 
-## 🔍 Key Insights
-- Month-to-month customers show the highest churn
-- Customers with tenure less than 1 year are at high risk
-- Higher monthly charges correlate with higher churn probability
+## 🔍 Key Business Insights
+- Month-to-month contracts have the highest churn rate
+- Customers with tenure under one year are high risk
 - Long-term contracts significantly reduce churn
+- Higher monthly charges correlate with churn probability
 
 ---
 
-## 🚀 Outcome
-This project demonstrates an end-to-end analytics workflow:
-✔ Data warehousing  
-✔ SQL analytics  
-✔ Business KPI modeling  
-✔ Professional dashboard design  
+## 🚀 Learning Outcomes
+- Enterprise data modeling in Snowflake
+- Layered analytics architecture
+- SQL-based KPI engineering
+- BI-first data design
+- Cost and governance awareness
 
 ---
 
 ## 📬 Author
 **Anindita Deb**  
-Aspiring Data Scientist | Analytics Enthusiast  
+Aspiring Data Scientist | Analytics Engineer Enthusiast
+
+
+
+
+

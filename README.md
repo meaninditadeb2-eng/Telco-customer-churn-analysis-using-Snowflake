@@ -152,6 +152,9 @@ The Power BI dashboard provides:
 - Customer-level drill-down
 
 Designed as a **single-page executive dashboard** for fast decision-making.
+## 📊 Dashboard Preview
+
+![Dashboard Screenshot](./DASHBOARD/dashboard_preview.png)
 
 ---
 

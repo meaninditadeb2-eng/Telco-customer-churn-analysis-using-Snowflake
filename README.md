@@ -154,8 +154,7 @@ The Power BI dashboard provides:
 Designed as a **single-page executive dashboard** for fast decision-making.
 ## 📊 Dashboard Preview
 
-![Dashboard Screenshot](./DASHBOARD/dashboard_preview.png)
-
+![Dashboard Screenshot](./DASHBOARD/POWERBI_SCREENSHOT.png)
 ---
 
 ## 🔍 Key Business Insights

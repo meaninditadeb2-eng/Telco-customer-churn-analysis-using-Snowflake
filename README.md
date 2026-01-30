@@ -3,6 +3,21 @@
 End-to-End Snowflake & Power BI Analytics Project
 
 ---
+## 🚀 Getting Started
+
+This project requires Snowflake and Power BI.
+
+### ❗ Prerequisites
+- Snowflake account
+- Power BI Desktop
+- Telco customer churn dataset in `/DATA`
+
+### 📁 Setup Instructions
+1. Load the dataset into Snowflake stage.
+2. Run SQL scripts from `SQL/01_database_schema.sql` → through `SQL/BI_layer_views.sql`
+3. Open the Power BI file in `/DASHBOARD/Telco_Churn_Dashboard.pbix`
+4. Connect Power BI to Snowflake using your Snowflake credentials
+
 
 ## 📖 Project Overview
 This project implements an enterprise-style analytics platform to analyze customer churn behavior for a telecom company.  

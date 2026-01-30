@@ -17,6 +17,13 @@ This project requires Snowflake and Power BI.
 2. Run SQL scripts from `SQL/01_database_schema.sql` → through `SQL/BI_layer_views.sql`
 3. Open the Power BI file in `/DASHBOARD/Telco_Churn_Dashboard.pbix`
 4. Connect Power BI to Snowflake using your Snowflake credentials
+   
+## 💡 How to Use
+
+- Use Snowflake UI or SnowSQL to upload dataset to stage
+- Execute SQL scripts in sequence from RAW → CLEAN → ANALYTICS
+- Validate row counts after each layer
+- Open Power BI file and refresh data
 
 
 ## 📖 Project Overview
